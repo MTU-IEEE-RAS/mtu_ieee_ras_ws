@@ -1,0 +1,48 @@
+{
+    "name": "MTU RAS Development Container",
+    "privileged": true,
+    "features": {
+      "ghcr.io/devcontainers/features/common-utils:2": {
+        "username": "${localEnv:USER}", 
+        "userUid": "automatic",
+        "userGid": "automatic"
+      }
+    },
+    "remoteUser": "${localEnv:USERNAME:ras}",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "USERNAME": "${localEnv:USERNAME:ras}"
+        }
+    },
+    "workspaceFolder": "/home/mtu_ras_ws",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/mtu_ras_ws,type=bind",
+    "customizations": {
+        "vscode": {
+            "extensions":[
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-themes",
+                "twxs.cmake",
+                "donjayamanne.python-extension-pack",
+                "eamodio.gitlens",
+                "ms-iot.vscode-ros"
+            ]
+        }
+    },
+    "containerEnv": {
+        "DISPLAY": "unix:0",
+        "ROS_AUTOMATIC_DISCOVERY_RANGE": "LOCALHOST",
+        "ROS_DOMAIN_ID": "42"
+    },
+    "runArgs": [
+        "--net=host",
+        "--pid=host",
+        "--ipc=host",
+        "-e", "DISPLAY=${env:DISPLAY::0}"
+    ],
+    "mounts": [
+       "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
+       "source=/dev/dxg,target=/dev/dxg,type=bind,consistency=cached"
+    ],
+    "postCreateCommand": "sudo chown -R $(whoami) /home/mtu_ras_ws/"
+}

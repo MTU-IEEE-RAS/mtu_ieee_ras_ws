@@ -1,0 +1,3 @@
+[submodule "dev/amazeing-challenge"]
+	path = dev/amazeing-challenge
+	url = git@github.com:MTU-IEEE-RAS/amazeing-challenge.git

@@ -41,6 +41,8 @@ There are two directories: `src` and `dev`. Please place ROS 2 packages in the `
 
 These instructions detail how to create gitsubmodules and how to fork from other repositories (useful for including others' code in activities).
 
+Be sure to run `./scripts/mtu_ieee_ras_setup.bash` to create the correct configuration file `devcontainer.json` according to your OS.
+
 ### Update Submodules
 
 To add submdules, run `git submodule add -b <branch name> git@github.org/<project>/<repo>.git` in the directory location where you want to add the submodule.

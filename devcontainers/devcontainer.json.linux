@@ -1,5 +1,5 @@
 {
-    "name": "MTU RAS Development Container",
+    "name": "MTU IEEE RAS Development Container",
     "privileged": true,
     "features": {
       "ghcr.io/devcontainers/features/common-utils:2": {
@@ -15,8 +15,8 @@
             "USERNAME": "${localEnv:USERNAME:ras}"
         }
     },
-    "workspaceFolder": "/home/mtu_ras_ws",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/home/mtu_ras_ws,type=bind",
+    "workspaceFolder": "/home/mtu_ieee_ras_ws",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/mtu_ieee_ras_ws,type=bind",
     "customizations": {
         "vscode": {
             "extensions":[
@@ -44,5 +44,5 @@
        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
        "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached"
     ],
-    "postCreateCommand": "sudo chown -R $(whoami) /home/mtu_ras_ws/"
+    "postCreateCommand": "sudo chown -R $(whoami) /home/mtu_ieee_ras_ws/"
 }

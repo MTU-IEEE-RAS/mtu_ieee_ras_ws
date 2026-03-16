@@ -44,5 +44,5 @@
        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
        "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached"
     ],
-    "postCreateCommand": "sudo chown -R $(whoami) /home/mtu_ieee_ras_ws/"
+    "postCreateCommand": "/bin/bash /home/mtu_ieee_ras_ws/scripts/post_create.bash"
 }

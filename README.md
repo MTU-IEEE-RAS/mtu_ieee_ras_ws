@@ -15,8 +15,11 @@ DO NOT TRY TO PUSH CHANGES FOR THIS REPOSITORY!
     * Make sure to download the `Remote Development` Extension (click on the icon with boxes on the left side of your VS Code window)
 3. Clone this repository
 4. Using Git Bash, and navigate to this repository
-5. Run `./scripts/mtu_ieee_ras_setup.bash` to create the correct configuration file `devcontainer.json` according to your OS
-6. In VS Code, type `CTRL+Shift+P` and search for the command `Dev Containers: Reopen in Container`.
+5. Open up VS Code in either git bash or WSL using `code .`
+    * If you have errors when using git bash, trying opening VSCode in WSL instead
+6. Run `./scripts/mtu_ieee_ras_setup.bash` in git bash or WSL to create the correct configuration file `devcontainer.json` according to your OS
+7. Run `git submodule init` and `git submodule update` to ensure submodules are cloned down
+8. In VS Code, type `CTRL+Shift+P` and search for the command `Dev Containers: Reopen in Container`.
     * If that does not work, navigate to `View`->`Command Palette` in VS Code and search for `Dev Containers: Reopen in Container`
 
 ### Using this Workspace

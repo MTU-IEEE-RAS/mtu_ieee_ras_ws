@@ -1,6 +1,6 @@
 [submodule "dev/amazeing-challenge"]
 	path = dev/amazeing-challenge
-	url = git@github.com:MTU-IEEE-RAS/amazeing-challenge.git
+	url = https://github.com/MTU-IEEE-RAS/amazeing-challenge.git
 [submodule "dev/amazeing-challenge-eval"]
 	path = dev/amazeing-challenge-eval
-	url = git@github.com:MTU-IEEE-RAS/amazeing-challenge-eval.git
+	url = https://github.com/MTU-IEEE-RAS/amazeing-challenge-eval.git

@@ -13,6 +13,7 @@ DO NOT TRY TO PUSH CHANGES FOR THIS REPOSITORY!
 2. Follow the `Install Docker` and `Install VS Code` instructions on this [webpage](https://docs.ros.org/en/kilted/How-To-Guides/Setup-ROS-2-with-VSCode-and-Docker-Container.html)
     * If you are on Windows, download VS Code from this [webpage](https://code.visualstudio.com/download)
     * Make sure to download the `Remote Development` Extension (click on the icon with boxes on the left side of your VS Code window)
+    * If you have Docker downloaded in Windows, remove it! VS Code will ask you to install docker and do it automatically.
 3. Clone this repository
 4. Using Git Bash, and navigate to this repository
 5. Open up VS Code in either git bash or WSL using `code .`
